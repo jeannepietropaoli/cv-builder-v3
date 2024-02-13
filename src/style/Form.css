@@ -13,10 +13,55 @@
 
 form {
     background-color: white;
+    padding: clamp(6px, 3%, 30px) clamp(10px, 8%, 90px);
+    width: clamp(300px, 50%, 500px);
+    max-height: 60%;
+    overflow-y: scroll;
+    display: block;
 }
 
 .form-fields {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    
+    margin-bottom: 1em;
+}
+
+form ul {
+    padding: 0;
+}
+
+.form-fields li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-fields label,
+.form-fields h3 {
+    text-transform: capitalize;
+}
+
+.form-fields li input {
+    display: block;
+    width: 100%;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 7%;
+
+}
+
+textarea {
+    min-height: 8em;
+    resize: vertical;
+}
+
+
+.form-fields input,
+.form-fields label {
+    display: block;
+    width: 100%;
 }
