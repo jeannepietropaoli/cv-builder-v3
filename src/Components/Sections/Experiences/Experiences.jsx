@@ -40,7 +40,7 @@ export default function Experiences() {
 
     const handleTemporaryDataChange = (e) => {   
         setTemporaryData(temporaryData.map(experience => {
-                return e.target.parentNode.id == experience.id
+                return e.target.parentNode.parentNode.id == experience.id
                     ? {...experience, [e.target.name]: e.target.value}
                     : {...experience}
             })
