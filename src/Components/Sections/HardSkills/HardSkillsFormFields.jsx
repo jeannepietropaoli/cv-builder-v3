@@ -8,10 +8,10 @@ export default function HardSkillsFormFields(props) {
     }
 
     return (
-        <div className="form-fields">
+        <ul>
             {Object.keys(props.temporaryData).map((key, index) => {
                 return (
-                    <div key={index} className={convertToClassName(key)}>
+                    <ul key={index} className="form-fields">
                         <h3 htmlFor={key}>{convertToReadableName(key)}</h3>
 
                         {props.temporaryData[key].map((skill, index) => {
@@ -22,9 +22,9 @@ export default function HardSkillsFormFields(props) {
                                 </li>
                             )
                         })}
-                    </div>
+                    </ul>
                 )
             })}
-        </div>
+        </ul>
     )
 }

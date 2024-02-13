@@ -1,6 +1,6 @@
 export default function SoftSkillsFormFields(props) {
     return (
-        <ul>
+        <ul className="form-fields">
             {props.temporaryData.map((skill, index) => {
                 return (
                     <li key={index} >
