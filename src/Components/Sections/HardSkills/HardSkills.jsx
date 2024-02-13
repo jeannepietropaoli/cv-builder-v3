@@ -42,19 +42,19 @@ export default function HardSkills() {
                 <div className="tech-stack">
                     <h3>Tech Stack</h3>
                     <ul>
-                        {data.techStack.map(tech => <li key={tech}>{tech}</li>)}
+                        {data.techStack.map(tech => <li key={tech} className="blue">{tech}</li>)}
                     </ul>
                 </div>
                 <div className="tools">
                     <h3>Tools</h3>
                     <ul>
-                        {data.tools.map(tool => <li key={tool}>{tool}</li>)}
+                        {data.tools.map(tool => <li key={tool} className="blue">{tool}</li>)}
                     </ul>
                 </div>
                 <div className="languages">
                     <h3>Languages</h3>
                     <ul>
-                        {data.languages.map(language => <li key={language}>{language}</li>)}
+                        {data.languages.map(language => <li key={language} className="blue">{language}</li>)}
                     </ul>
                 </div>
             </Preview>
