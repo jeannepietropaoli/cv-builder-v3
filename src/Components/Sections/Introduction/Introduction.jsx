@@ -5,7 +5,7 @@ import Preview from "../../Preview/Preview";
 import '../../../style/Introduction.css'
 
 export default function Introduction() {
-    const [data, setData] = useState('I am a web developer with 5 years of experience. I am passionate about my work and I am always looking for new challenges. I am a team player')
+    const [data, setData] = useState('I am Jane, a Junior Web Developer with a solid grasp of front-end technologies such as HTML, CSS, JavaScript and ReactJS. Committed to creating visually appealing and functional websites, I am eager to contribute and expand skills in a collaborative and growth-oriented environment.')
     
     const [temporaryData, setTemporaryData] = useState(data)
     
