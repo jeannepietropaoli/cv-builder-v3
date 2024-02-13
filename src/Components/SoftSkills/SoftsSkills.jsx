@@ -33,7 +33,7 @@ export default function SoftSkills() {
             <Preview switchToEditMode={() => setEditMode(true)} sectionName="softSkills" >
                 <h2 className="section-title">Soft Skills</h2>    
                 <ul>
-                    {data.map(skill => <li key={skill}>{skill}</li>)}
+                    {data.map(skill => <li key={skill} className="blue">{skill}</li>)}
                 </ul>
             </Preview>
 
