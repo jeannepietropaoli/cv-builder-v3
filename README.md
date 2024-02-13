@@ -2,7 +2,7 @@
 
 ## Live version
 
-Coming (very) soon...
+[Check it out] (online-cv-builder-app.netlify.app)
 
 ## Description
 
