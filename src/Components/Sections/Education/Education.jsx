@@ -1,5 +1,4 @@
 import { useState } from "react";
-import EditButton from "../../Preview/EditButton";
 import Form from "../../EditMode/Form";
 import EducationFormFields from "./EducationFormFields";
 import Preview from "../../Preview/Preview";
@@ -22,7 +21,7 @@ export default function Education() {
             degree: 'Master in Computer Science',
             startDate: 2015,
             endDate: 2017,
-            description: 'I continued my studies at the University of Montreal. I learned a lot about programming and I also learned how to work in a team.'
+            description: 'I continued my studies at the University of Montreal without a specilization in data science.'
         }
     ])
 
@@ -42,7 +41,7 @@ export default function Education() {
 
     const handleTemporaryDataChange = (e) => {   
         setTemporaryData(temporaryData.map(course => {
-                return e.target.parentNode.id == course.id
+                return e.target.parentNode.parentNode.id == course.id
                     ? {...course, [e.target.name]: e.target.value}
                     : {...course}
             })
