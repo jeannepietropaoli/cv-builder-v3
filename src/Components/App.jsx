@@ -12,14 +12,9 @@ import { useReactToPrint } from 'react-to-print';
 function App() {
   const componentToPrint = useRef();
 
-  const print = useReactToPrint({
+  const handlePrint = useReactToPrint({
     content: () => componentToPrint.current,
   });
-
-  const handlePrint = () => {
-    setPrintMode(true);
-    print();
-  }
 
   return (
     <>
