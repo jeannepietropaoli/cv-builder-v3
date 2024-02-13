@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
-a:hover {
-  color: #535bf2;
+
+* {
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  color: rgb(58, 58, 58);
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
 }
+
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  font-family: "Trirong", serif;
+  margin: 0;
+  line-height: 1;
+}
+
+h2 {
+  margin: 0 0 1em 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0 0 0.4em 0;
 }
 
 button {
@@ -42,32 +56,57 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 section {
-  border: 1px solid red;
-  padding: 1rem 2rem;
+  padding: 1em 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.preview {
+  position: relative;
+}
+
+.preview:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.preview:hover > .edit-button {
+  visibility: visible;
+}
+
+.illustrative-logo {
+  height: 1em;
+  width: 1em;
+  position: relative;
+  bottom: -2px;
+  margin-right: 5px;
+}
+
+.section-title {
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 10px;
+  background-color: yellow;
+  top: 2px;
+  z-index: -1;
+}
+
+.description {
+  padding-left: 2em;
+}
+
+.detailed-subtitle {
+  display: inline-block;
 }

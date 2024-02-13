@@ -1,0 +1,18 @@
+.edit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    border: 2px solid rgb(89 128 250);
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.edit-button img {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 2px;
+}

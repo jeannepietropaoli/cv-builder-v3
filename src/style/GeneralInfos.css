@@ -1,0 +1,28 @@
+#generalInfos {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-row: repeat(2, auto);
+    position: relative;
+    align-items: center;
+}
+
+#generalInfos h2 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.general-infos--contact-list {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+.general-infos--contact-item {
+    list-style: none;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-left: auto;
+}
