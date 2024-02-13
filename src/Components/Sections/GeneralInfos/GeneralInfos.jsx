@@ -10,13 +10,13 @@ import githubLogo from '../../../assets/profile.png'
 
 export default function GeneralInfos() {
     const [data, setData] = useState({
-        firstName: 'John',
+        firstName: 'Jane',
         lastName: 'Doe',
         title: 'Junior Web Developer',
         phone: '581 443-5651',
-        email: 'johndoe@gmail.com',
+        email: 'janedoe@gmail.com',
         location: 'New York',
-        github: 'github.com/john_doe_here'
+        github: 'github.com/jane_doe_here'
     })
 
     const [temporaryData, setTemporaryData] = useState(data)
