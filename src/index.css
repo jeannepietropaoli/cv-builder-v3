@@ -67,44 +67,12 @@ button:hover {
   border-color: var(--blue-accent-color);
 }
 
-section {
-  padding: 1em 0;
-}
-
-.preview {
-  position: relative;
-}
-
-.preview:hover {
-  background-color: rgb(237, 237, 237);
-}
-
-.preview:hover > .edit-button {
-  visibility: visible;
-}
-
 .illustrative-logo {
   height: 1em;
   width: 1em;
   position: relative;
   bottom: -2px;
   margin-right: 5px;
-}
-
-.section-title {
-  width: max-content;
-  position: relative;
-  z-index: 1;
-}
-
-.section-title::before {
-  position: absolute;
-  content: "";
-  width: 110%;
-  height: 10px;
-  background-color: yellow;
-  top: 2px;
-  z-index: -1;
 }
 
 .description {
@@ -126,4 +94,10 @@ li.blue::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+@media screen and (max-width: 480px) {
+  #root {
+    padding: 0.4em;
+  }
 }

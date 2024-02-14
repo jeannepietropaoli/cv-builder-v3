@@ -1,4 +1,5 @@
 import EditButton from "./EditButton"
+import "../../style/Preview.css"
 
 export default function Preview(props) {
     return (

@@ -1,0 +1,38 @@
+section {
+    padding: 1em 0;
+  }
+  
+.preview {
+    position: relative;
+}
+
+.preview:hover {
+background-color: rgb(237, 237, 237);
+}
+
+.preview:hover > .edit-button {
+visibility: visible;
+}
+
+.section-title {
+width: max-content;
+position: relative;
+z-index: 1;
+}
+
+.section-title::before {
+position: absolute;
+content: "";
+width: 110%;
+height: 10px;
+background-color: yellow;
+top: 2px;
+z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+    .preview {
+        border-bottom: 2px solid rgb(89 128 250);
+    }
+    
+}
